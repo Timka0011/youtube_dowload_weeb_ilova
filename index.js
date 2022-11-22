@@ -13,6 +13,6 @@ app.get("/download", (req, res) => {
   }).pipe(res);
 });
 
-app.listen(3000, () => {
+app.listen(PORT||3000, () => {
   console.log("server on 3000");
 });
