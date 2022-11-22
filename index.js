@@ -12,7 +12,7 @@ app.get("/download", (req, res) => {
     format: "mp4",
   }).pipe(res);
 });
-
+const PORT = process.env.PORT;
 app.listen(PORT||3000, () => {
   console.log("server on 3000");
 });
